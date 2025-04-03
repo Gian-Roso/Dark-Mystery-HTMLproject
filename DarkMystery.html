@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/animation.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Dark Mystery</title>
 </head>
 <body class="bg-orange-950 text-white px-5">
@@ -147,59 +149,3 @@
 </div>
 </body>
 </html>
-
-<style>
-    html {
-        scroll-behavior: smooth;
-    }
-
-    /* ==========animação de movimentação============== */
-    @keyframes shake {
-      0% { transform: translate(0, 0); }
-      25% { transform: translate(-10px, 2px); }
-      50% { transform: translate(-2px, 7px); }
-      75% { transform: translate(1px, 3px); }
-      100% { transform: translate(0, 0); }
-    }
-
-    @keyframes shake2 {
-      0% { transform: translate(0, 0); }
-      25% { transform: translate(5px, 4px); }
-      50% { transform: translate(2px, -3px); }
-      75% { transform: translate(-8px, 2px); }
-      100% { transform: translate(0, 1); }
-    }
-  
-    .animate-shake {
-      animation-name: shake;
-      animation: shake 20s ease-in-out infinite;
-      animation-timing-function: ease-in-out;
-      animation-delay: 3s;
-      animation-iteration-count: infinite;
-    }
-    .animate-shake2 {
-      animation-name: shake2;
-      animation: shake2 20s ease-in-out infinite;
-      animation-timing-function: ease-in-out;
-      animation-delay: 3s;
-      animation-iteration-count: infinite;
-    }
-    /* ================================================= */
-    @layer utilities {
-      @keyframes shadowSwap {
-        0% { text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
-        50% { text-shadow: -3px -3px 3px rgba(0, 0, 0, 0.5); }
-        100% { text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
-      }
-
-      .animate-shadow {
-        animation: shadowSwap 5s infinite alternate ease-in-out;
-      }
-
-      .text-shadow {
-        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
-      }
-    }
-    /* ====================Animação borao de sombra================= */
-
-  </style>
