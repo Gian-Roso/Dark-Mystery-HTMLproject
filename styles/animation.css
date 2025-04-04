@@ -1,0 +1,43 @@
+/* ========== Animação de Movimentação ============== */
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-10px, 2px); }
+    50% { transform: translate(-2px, 7px); }
+    75% { transform: translate(1px, 3px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes shake2 {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(5px, 4px); }
+    50% { transform: translate(2px, -3px); }
+    75% { transform: translate(-8px, 2px); }
+    100% { transform: translate(0, 1); }
+}
+
+.animate-shake {
+    animation: shake 20s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+.animate-shake2 {
+    animation: shake2 20s ease-in-out infinite;
+    animation-delay: 3s;
+}
+
+/* ================================================= */
+/*        ANIMAÇÃO DE SOMBRA DE TEXTO                */
+/* ================================================= */
+@keyframes shadowSwap {
+    0% { text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
+    50% { text-shadow: -3px -3px 3px rgba(0, 0, 0, 0.5); }
+    100% { text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
+}
+
+.animate-shadow {
+    animation: shadowSwap 5s infinite alternate ease-in-out;
+}
+
+.text-shadow {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
