@@ -10,7 +10,7 @@
 </head>
 <body class="bg-orange-950 text-white px-5">
     <div class="container mx-auto mt-6 px-5 flex items-center bg-orange-200">
-        <div class="grid grid-flow-row w-full ">
+        <div class="grid grid-flow-row w-full h-auto ">
             <!-- ROW-1 logo -->
             <div class="container mx-auto mt-1 px-1 flex items-center"><!-- LOGO -->
                 <img src="assets/icons/Logo.png" alt="" class="h-18 w-28 mt-5">
@@ -26,81 +26,36 @@
                 </img>
             </div>
         <!-- ROW-2 linha -->
-        <div class="w-full">
-            <iframe id="introFrame" src="views/Intro.html" class="w-full border-none overflow-hidden"></iframe>
-        </div>
+        <hr class="border-t-2 border-black mt-4 mx-5">
                 <div class="w-full">
+                    <iframe id="introFrame" src="views/Intro.html" class="w-full border-none overflow-hidden"></iframe>
+                </div>
+                <hr class="border-t-2 border-black mt-4 mx-5">
+                <div class="w-full mt-[150px]">
                     <iframe id="summaryFrame" src="views/Summary.html" class="w-full border-none overflow-hidden"></iframe>
                 </div>
-        <!-- ROW-3 produto 1 -->
-         <!-- grid -->
-          <div class="text-3xl text-black font-extrabold text-center">Criaturas</div>
-        <div class="Criaturas">
+                <hr class="border-t-2 border-black mt-[130px] mx-5">
+          <div class="text-3xl text-black font-extrabold text-center mt-[10px]">1. Criaturas
+            <hr class="border-t-2 border-black mt-3 mx-5 mb-[50px]">
+          </div>
           <div class="grid grid-rows-3 gap-6">
-            <!-- grid produtos -->
-             <!-- ROW-1 -->
                 <div class="mt-2 b-6 px-6  ">
-                    <div class="mt-3 px-6 grid grid-cols-[auto_1fr] gap-6 border-solid border border-black rounded text-black">
-                        <!-- IMAGEM -->
-                        <div class="mb-6 mt-5 h-90 w-[250px] lg:w-[450px] rounded">
-                            <img src="Imagens/wendigo.webp" alt="" class="h-full w-full object-cover border-2 border-solid border-black rounded">
-                        </div>
-                    
-                        <!-- CONTEÚDO -->
-                        <div class="flex flex-col justify-start">
-                            <!-- TÍTULO -->
-                            <h2 class="text-black font-extrabold underline text-4xl mt-5 mb-3 p-2">
-                                Wendigo
-                            </h2>
-                    
-                            <!-- TEXTO -->
-                            <p class="text-lg font-normal font-serif mb-2">
-                                Dizem as lendas que o Wendigo é um espírito amaldiçoado,  
-                                nascido do frio e da fome insaciável. Aquele que consome carne  
-                                humana em tempos de desespero se transforma em algo além do homem.
-                            </p>
-                            <p class="text-lg font-normal font-serif mt-2 mb-2">
-                                Uma criatura alta, esquelética, de olhos fundos e pele cinzenta, sempre esfomeada, sempre à espreita.  
-                                Seu sussurro é levado pelo vento gelado, e onde ele passa, a neve fica suja de ossos.
-                            </p>
-                            <p class="text-lg font-semibold font-serif text-rose-950 mt-2 animate-shake2">
-                                Jamais siga os rastros na floresta!!!
-                            </p>
-                            <p class="text-lg font-bold font-seif text-rose-950 mt-3 animate-shake">
-                                Pois o Wendigo nunca para de caçar.
-                            </p>
-                        </div>
+                    <div class="w-full">
+                        <p class="text-2xl text-black font-bold">1.1 Criaturas amaldiçoado</p>
+                        <iframe id="CursedCreaturesFrame" src="views/CursedCreature.html" class="w-full border-none overflow-hidden"></iframe>
                     </div>
-                    
-                <!-- ROW-2-->
-                <div class="mt-3 px-6 grid grid-cols-[auto_1fr] gap-6 border-solid border border-black rounded text-black">
-                    <!-- IMAGEM -->
-                    
-                    <!-- CONTEÚDO -->
-                    <div class="flex flex-col justify-start">
-                        <!-- TÍTULO -->
-                        <h2 class="text-black font-extrabold underline text-4xl mt-5 mb-3 p-2">
-                            Shadow people
-                        </h2>
-                        
-                        <!-- TEXTO -->
-                        <p class="text-lg font-normal font-serif mb-2">
-                            Dizem as lendas que, desde tempos imemoriais, figuras sombrias espreitam nas sombras, observando silenciosamente aqueles que caminham sozinhos à noite ou acordam no meio da madrugada. Sem rosto, sem forma definida, elas deslizam pelos cantos dos olhos e desaparecem quando encaradas diretamente.
-                        </p>
-                        <p class="text-lg font-normal font-serif mt-2 mb-2">
-                            Alguns acreditam que são espíritos presos entre mundos, outros dizem que são entidades antigas que se alimentam do medo humano.
-                        </p>
-                        <p class="text-lg font-semibold font-serif text-black text-shadow animate-shadow mt-2">
-                            Seja como for, quem as vê uma vez, dificilmente as esquece…
-                        </p>
-                        <p class="text-lg font-bold font-seif text-black mt-3 text-shadow animate-shadow">
-                            pois, segundo os relatos, quanto mais você nota sua presença, mais perto elas chegam."
-                        </p>
+                    <div class="w-full">
+                        <p class="text-2xl text-black font-bold">1.2 Entidades</p>
+                        <iframe id="EntitiesFrame" src="views/Entities.html" class="w-full border-none overflow-hidden"></iframe>
                     </div>
-                    <div class="mb-6 mt-5 h-90 w-[250px] lg:w-[450px] rounded">
-                        <img src="Imagens/shadow-people.webp" alt="" class="h-full w-full object-cover border-2 border-solid border-black rounded">
+                    <div class="w-full">
+                        <p class="text-2xl text-black font-bold">1.3 Criaturas Profanas</p>
+                        <iframe id="UnholyCreaturesFrame" src="views/UnholyCreatures.html" class="w-full border-none overflow-hidden"></iframe>
                     </div>
-                </div>
+                    <div class="w-full">
+                        <p class="text-2xl text-black font-bold">1.4 Espiritos e assombrações</p>
+                        <iframe id="SpiritisAndHauntingsFrame" src="views/SpiritisAndHauntings.html" class="w-full border-none overflow-hidden"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,7 +65,16 @@
 </html>
 
 <script src="script/script.js"></script>
+<script src="script/CursedCreature.js"></script>
+<script src="script/Entities.js"></script>
+<script src="script/UnholyCreatures.js"></script>
+<script src="script/SpiritisAndHauntings.js"></script>
 <script>
     frameSummary()
     frameIntro()
+    frameCursedCreature()
+    frameEntities()
+    frameUnholyCreature()
+    frameSpiritisAndHautings()
+    
 </script>
